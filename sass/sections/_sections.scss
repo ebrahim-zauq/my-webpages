@@ -1,0 +1,65 @@
+.hero{
+	padding: 48px 0;
+	border-bottom: 1px solid #4545;
+	.slide{
+		&.flex{
+			display: flex !important;
+		}
+		.slide-image{
+			width: 40%;
+		}
+		.txt{
+			width: 60%;
+			padding-left: 64px; 
+			h1{
+				color: #4f4f4f;
+			}
+		}
+	}
+	.slick-dots{
+		display: flex;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		li{
+			padding: 0 2px;
+			button{
+				font-size: 0;
+				width: 16px;
+				height: 16px;
+				background: $theme-color;
+				border-radius:50%; 
+				position: relative;
+				cursor: pointer;
+				&:after{
+					content:'';
+					width: 10px;
+					height: 10px;
+					position: absolute;
+					top: 3px;
+					left: 3px;
+					background: $white;
+					border-radius:50%;
+					opacity: 0;
+				}
+			}
+			&.slick-active{
+				button{
+					&:after{
+						opacity:1;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.services{
+	ul{
+		
+		li{
+
+		}
+	}
+}

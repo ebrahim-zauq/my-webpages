@@ -1,0 +1,29 @@
+.site-header{
+	padding: 30px 0 10px;
+	border-bottom: 1px solid #4545;
+	.site-menu{
+		margin-left: auto;
+		margin-bottom: 16px;
+		ul{
+			@include mquery(mobile){
+				flex-direction: column;
+			}
+			li{
+				padding: 5px 10px;
+				a{
+					color: #454545;
+					text-transform: uppercase;
+					font-weight: bold;
+					font-family: fantasy;
+					font-size: 13px;
+					&:hover{
+						color:$theme-color;
+					}
+				}
+			}
+		}
+	}
+	>.flex{
+		align-items: flex-end;
+	}
+}

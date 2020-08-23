@@ -1,0 +1,122 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css";
+body {
+  font: 16px/1.5 arial;
+  color: #4545; }
+
+a {
+  transition: all 0.5s;
+  text-decoration: none;
+  display: block; }
+
+button {
+  outline: none;
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px; }
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 18px; }
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 14px; }
+
+p {
+  font: 15px/1.6;
+  margin-bottom: 16px; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.flex {
+  display: flex; }
+
+.button {
+  padding: 10px 20px;
+  display: inline-block;
+  background: #3bafbd;
+  border-radius: 17px;
+  color: #fff;
+  margin-top: 40px; }
+  .button:hover {
+    background: #017989; }
+
+.site-header {
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #4545; }
+  .site-header .site-menu {
+    margin-left: auto;
+    margin-bottom: 16px; }
+    @media only screen and (max-width: 767px) {
+      .site-header .site-menu ul {
+        flex-direction: column; } }
+    .site-header .site-menu ul li {
+      padding: 5px 10px; }
+      .site-header .site-menu ul li a {
+        color: #454545;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: fantasy;
+        font-size: 13px; }
+        .site-header .site-menu ul li a:hover {
+          color: #3bafbd; }
+  .site-header > .flex {
+    align-items: flex-end; }
+
+.hero {
+  padding: 48px 0;
+  border-bottom: 1px solid #4545; }
+  .hero .slide.flex {
+    display: flex !important; }
+  .hero .slide .slide-image {
+    width: 40%; }
+  .hero .slide .txt {
+    width: 60%;
+    padding-left: 64px; }
+    .hero .slide .txt h1 {
+      color: #4f4f4f; }
+  .hero .slick-dots {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+    .hero .slick-dots li {
+      padding: 0 2px; }
+      .hero .slick-dots li button {
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        background: #3bafbd;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer; }
+        .hero .slick-dots li button:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          background: #fff;
+          border-radius: 50%;
+          opacity: 0; }
+      .hero .slick-dots li.slick-active button:after {
+        opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
