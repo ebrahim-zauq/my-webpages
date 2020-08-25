@@ -2,8 +2,11 @@
 	padding: 48px 0;
 	border-bottom: 1px solid #4545;
 	.slide{
-		&.flex{
+		/*&.flex{
 			display: flex !important;
+		}*/
+		@include mquery(small){
+			display: inline-block;
 		}
 		.slide-image{
 			width: 40%;
@@ -13,6 +16,7 @@
 			padding-left: 64px; 
 			h1{
 				color: #4f4f4f;
+				font-family: fantasy;
 			}
 		}
 	}
@@ -21,6 +25,9 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		@include mquery(mobile){
+			display: none;
+		}
 		li{
 			padding: 0 2px;
 			button{
@@ -56,10 +63,38 @@
 }
 
 .services{
-	ul{
-		
-		li{
-
+	padding: 40px 0;
+	@include mquery(mobile){
+		padding: 20px 0;
+	}
+	.img{
+		margin-bottom: 25px;
+			img{
+				width: 100%;
+			}
+		}
+	.txt{
+		h3{
+			color: #4f4f4f;
+			font-family: fantasy;
+		}
+	.button{
+		margin-top: 5px;
+		}
+	}
+}
+.services-cards{
+	flex-wrap: wrap;
+	margin: 0 -16px;
+	li{
+		width: 33.33%;
+		padding:0 16px 40px;
+		@include mquery(mobile){
+			width: 50%;
+			padding: 0 8px 20px;
+		}
+		@include mquery(small){
+			width: 100%;
 		}
 	}
 }

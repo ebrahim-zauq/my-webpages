@@ -2,7 +2,9 @@ body{
 	font:16px/1.5 arial;
 	color: #4545;
 }
-
+*{
+	box-sizing: border-box;
+}
 a{
 	transition: all 0.5s;
 	text-decoration: none;
@@ -40,6 +42,7 @@ img{
 	display: block;
 	max-width: 100%;
 }
+
 .wrapper{
 	max-width: 990px;
 	margin: 0 auto;
@@ -49,12 +52,13 @@ img{
 	display: flex;	
 }
 .button{
-	padding: 10px 20px;
+	padding: 4px 10px;
     display: inline-block;
-    background: $theme-color;
-    border-radius: 17px;
+    background: #3bafbd;
+    border-radius: 8px;
     color: #fff;
     margin-top: 40px;
+    font-size: 14px;
     &:hover{
     	background:$hover-color;
     }

@@ -3,6 +3,9 @@ body {
   font: 16px/1.5 arial;
   color: #4545; }
 
+* {
+  box-sizing: border-box; }
+
 a {
   transition: all 0.5s;
   text-decoration: none;
@@ -48,12 +51,13 @@ img {
   display: flex; }
 
 .button {
-  padding: 10px 20px;
+  padding: 4px 10px;
   display: inline-block;
   background: #3bafbd;
-  border-radius: 17px;
+  border-radius: 8px;
   color: #fff;
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-size: 14px; }
   .button:hover {
     background: #017989; }
 
@@ -82,20 +86,29 @@ img {
 .hero {
   padding: 48px 0;
   border-bottom: 1px solid #4545; }
-  .hero .slide.flex {
-    display: flex !important; }
-  .hero .slide .slide-image {
-    width: 40%; }
-  .hero .slide .txt {
-    width: 60%;
-    padding-left: 64px; }
-    .hero .slide .txt h1 {
-      color: #4f4f4f; }
+  .hero .slide {
+    /*&.flex{
+    	display: flex !important;
+    }*/ }
+    @media only screen and (max-width: 480px) {
+      .hero .slide {
+        display: inline-block; } }
+    .hero .slide .slide-image {
+      width: 40%; }
+    .hero .slide .txt {
+      width: 60%;
+      padding-left: 64px; }
+      .hero .slide .txt h1 {
+        color: #4f4f4f;
+        font-family: fantasy; }
   .hero .slick-dots {
     display: flex;
     position: absolute;
     right: 0;
     bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .hero .slick-dots {
+        display: none; } }
     .hero .slick-dots li {
       padding: 0 2px; }
       .hero .slick-dots li button {
@@ -118,5 +131,34 @@ img {
           opacity: 0; }
       .hero .slick-dots li.slick-active button:after {
         opacity: 1; }
+
+.services {
+  padding: 40px 0; }
+  @media only screen and (max-width: 767px) {
+    .services {
+      padding: 20px 0; } }
+  .services .img {
+    margin-bottom: 25px; }
+    .services .img img {
+      width: 100%; }
+  .services .txt h3 {
+    color: #4f4f4f;
+    font-family: fantasy; }
+  .services .txt .button {
+    margin-top: 5px; }
+
+.services-cards {
+  flex-wrap: wrap;
+  margin: 0 -16px; }
+  .services-cards li {
+    width: 33.33%;
+    padding: 0 16px 40px; }
+    @media only screen and (max-width: 767px) {
+      .services-cards li {
+        width: 50%;
+        padding: 0 8px 20px; } }
+    @media only screen and (max-width: 480px) {
+      .services-cards li {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
